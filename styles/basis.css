@@ -1,0 +1,264 @@
+body{
+    margin:0 !important;
+    font-family:Courier New;
+    background:url(../images/all/bg.png);
+    padding:0 !important;
+    height:100%;
+}
+.content{
+    width:100%;
+    text-align:center;
+}
+
+.logo_row{
+    padding-top:10px;
+    text-align:center;
+}
+/*##########################################################*/
+/*############### DropDown-Menu ############################*/
+
+.dropDown_wrapper{
+    cursor:pointer;
+    
+}
+.dropDown_wrapper ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+.dropDown_wrapper li{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:block;
+    line-height:40px;
+    padding-left:10px;
+}
+.dropDown_wrapper li.title{
+    line-height:40px;
+    width:150px;
+    background:#ddd;
+}
+.dropDown:hover .dropDown_hidden{
+    display:block !important;
+    position:absolute;
+    z-index:2;
+}
+.dropDown_wrapper .dropDown_hidden{
+    display:none !important;
+    width:200px;
+    background:#ddd;
+}
+.dropDown_wrapper .dropDown_hidden li:hover{
+    background:#aaa;
+}
+.dropDown_wrapper .dropDown{
+    display:inline-block;
+}
+
+/************************************************************/
+/************************************************************/
+
+
+/*##########################################################*/
+/*############### Left Box ############################*/
+.leftBox{
+    text-align:left !important;
+    width:700px;
+    margin-top: 30px;
+    margin-bottom:100px;
+    display:inline-block !important;
+    border-left:1px #ccc solid;
+    border-right:1px #ccc solid;
+    padding:0px 10px 0 10px;
+}
+.title_wrapper{
+    margin:10px 0 10px 0px;
+    position:relative;
+    z-index:0;
+    font-weight:900;
+    font-size:22px;
+}
+
+.title_wrapper #title{
+    font-size:30px;
+    font-weight:100;
+    float:left;
+}
+
+.kataDescription{
+    width:660px;
+    background:white;
+    height:300px;
+    max-height:500px;
+    overflow:auto;
+    padding:20px;
+    float: left;
+    margin-bottom:0px;
+    font-size:18px;
+}
+.kataDescription:after{
+    content:'';
+    clear:both;    
+}
+.btn_wrapper{
+    float:right;
+    margin-bottom:20px;
+    text-align:center;
+}
+.done_btn{
+    width:75%;
+    height:30px;
+}
+.kata_select{
+    width:200px;
+    height:30px;
+    line-height:40px;
+}
+.leftBox .kataCounter{
+    margin-bottom:20px;
+}
+
+.leftBox .kataCounter .box{
+    width:50px;
+    height:50px;
+    background:url(../images/icons/todo_icon.png);
+    float:left;
+    line-height:50px;
+    text-align: center;
+}
+.leftBox .kataCounter .box.doing{
+   background:url(../images/icons/doing_icon.png)
+}
+.leftBox .kataCounter .box.done{
+   background:url(../images/icons/done_icon.png)
+}
+button.next, button.prev{
+    height:50px;
+    width:30px;
+    
+}
+
+
+.task_attachment_icons_wrapper{
+    clear:both;
+    height:40px;
+    padding:10px;
+    width:auto;
+}
+
+.task_attachment_icons_wrapper .video_icon{
+    width:40px;
+    height:40px;
+    background:url(../images/icons/video.png);
+    cursor:pointer;
+}
+.task_attachment_icons_wrapper .active_icon{
+    background:url(../images/icons/video-active.png);
+    
+}
+
+
+
+/************************************************************/
+/************************************************************/
+
+
+/*##########################################################*/
+/*############### Right Box ############################*/
+.rightBox{
+    float:left;
+    width:49%;
+    background:#eee;
+    margin-top: 100px;
+    margin-left:2%;
+    padding:10px;
+    
+}
+
+
+
+
+
+
+.video_wrapper{
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:white;
+    clear:both;
+    position:fixed;
+    top:0px !important;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    display:none;
+    
+}
+.no_video_indication{
+    line-height:400px;
+    font-size:30px;
+    font-weight:900;
+    color:red;
+    background:white;
+    padding:100px;
+}
+.close_dark_bg{
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+    background:url(../images/icons/close_dark_bg.png);
+    z-index:100;
+    width:60px;
+    height:60px;
+}
+.video_wrapper #video{
+    margin-top:100px;
+}
+/************************************************************/
+/************************************************************/
+
+/*##########################################################*/
+/*############### Stop-Uhr ############################*/
+.stop_uhr{
+    text-align:center;
+    margin-bottom:20px;
+    float:left;
+}
+.stop_uhr button{
+    width:100px;
+    height:30px;
+    font-size:15px;
+}
+.stop_uhr #stopuhr_anzeige{
+    line-height:40px;
+    font-size:20px;
+    font-weight:900;
+    text-align:center;
+}
+
+/************************************************************/
+/************************************************************/
+
+
+.clear{
+    clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

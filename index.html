@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=no"/>
+            <title></title>
+            <link rel="stylesheet" type="text/css" href="./styles/basis.css"/>
+            <script src="./js-files/jquery.min.js" type="text/javascript"></script>
+            <script src="./js-files/basis.js" type="text/javascript"></script>
+            <link href="./js-files/video_js/video-js.css" rel="stylesheet" type="text/css"/>
+            <!-- video.js must be in the <head> for older IEs to work. -->
+            <script src="./js-files/video_js/video.js"></script>
+    </head>
+    <body>
+        <div class="content">
+        
+            <div class="logo_row" align="center"><img src="./images/all/logo.png" style="width: 100px;"/></div>
+            <div class="leftBox">
+                    <!-- #### DropDown-Begin ####-->
+                    <div class="dropDown_wrapper">
+                        <select id="kata_selection" class="kata_select">
+                            <option>Load Kata</option>
+                        </select>
+                    </div>
+                     <!--*********  END ********-->
+                    
+                    <!-- #### Task-Title ####-->
+                    <div class="title_wrapper">
+                        <div id="task_title">Load your Kata!</div>
+                    </div>
+                    <!--*********  END ********-->
+                    
+                    
+                     <!-- #### Done-Icons ####-->
+                    <div class="kataCounter">
+                        <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                        <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+                        <div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div>
+
+                        <div class="clear"></div>
+                    </div>
+                     <!--*********  END ********-->
+                    
+                    <!-- #### Description of Kata####-->
+                    <div class="kataDescription_wraper">
+                        <div class="kataDescription" id="task_content">Kata-Beschreibung..........</div>
+                    </div>
+                    <!--*********  END ********-->
+                    
+                     <!-- #### Description of Kata####-->
+                    <div class="task_attachment_icons_wrapper">
+                        <div class="video_icon" onclick="task_controller.show_task_video();"></div>
+                    </div>
+                    <!--*********  END ********-->
+                    
+                    
+                    
+                     <!-- #### Next, Prev, Done - Btns####-->
+                    <div class="btn_wrapper">
+                        <button class="prev" onclick="task_controller.prev_task();">&lt;</button>
+                        <input type="checkbox" value="done" name="done" id="done"/>done &ensp;<button onclick="task_controller.next_task();" class="next">&gt;</button>
+                    </div>
+                    <!--*********  END ********-->
+                    
+                  
+                    
+                    <div class="stop_uhr">
+                        <button onclick="stopuhr.start();">start</button><button onclick="stopuhr.stop();">pause</button><br />
+                        <div id="stopuhr_anzeige">00:00:00</div>
+                        <button onclick="stopuhr.reset();">reset</button>
+                    </div>
+            </div>
+            
+        </div>
+        
+        
+        <!-- #### Video of Kata ####-->
+            <div  class="video_wrapper">
+                <div onclick="$('.video_wrapper').css('display','none');" class="close_dark_bg"></div>
+                <div id="video"></div>
+            </div>
+            
+        <!--*********  END ********-->
+    </body>
+</html>
