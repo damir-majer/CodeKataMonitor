@@ -91,11 +91,10 @@ body{
 .kataDescription{
     width:660px;
     background:white;
-    height:300px;
-    max-height:500px;
+    height:250px;
+    max-height:250px;
     overflow:auto;
     padding:20px;
-    float: left;
     margin-bottom:0px;
     font-size:18px;
 }
@@ -160,8 +159,37 @@ button.next, button.prev{
     
 }
 
-
-
+.kataDescription_wraper{
+    position:relative;
+}
+.kataDescription_wraper:hover .font_sizer{
+    display:block;
+}
+.kataDescription_wraper .font_sizer{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:64px;
+    height:30px;
+    display:none;
+    cursor:pointer;
+}
+.font_sizer .plus{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    border:1px #eee solid;
+    background:url(../images/icons/sizer-plus.png);
+    float:left;
+}
+.font_sizer .minus{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    border:1px #eee solid;
+    background:url(../images/icons/sizer-minus.png);
+    float:left;
+}
 /************************************************************/
 /************************************************************/
 
